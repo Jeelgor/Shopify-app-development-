@@ -1,8 +1,6 @@
 import {
   Page,
-  BlockStack,
-  TextField,
-  Text,
+  List,
 } from "@shopify/polaris";
 import { authenticate } from "../shopify.server";
 import { useLoaderData } from "@remix-run/react"; // Assuming Remix framework
@@ -53,20 +51,18 @@ export const loader = async ({ request }) => {
   const CustomerCount = CustomerresponseData.data.customersCount.count;
   return { count, Ordercount, CustomerCount };
 
-
 };
 
 // Index component
 export default function Index() {
   const { count, Ordercount, CustomerCount } = useLoaderData();
-
   return (
     <Page>
-      <BlockStack>
-        <TextField label="Product Count" value={`Product Count: ${count}`} readOnly />
-        <TextField label="Order Count" value={`Order Count: ${Ordercount}`} readOnly />
-        <TextField label="Customer Count" value={`Customer Count: ${CustomerCount}`} readOnly />
-      </BlockStack>
+      <List type="bullet">
+        <List.Item>Product Count:{count}</List.Item>
+        <List.Item>Order Count:{Ordercount}</List.Item>
+        <List.Item>Customer Count:{CustomerCount}</List.Item>
+      </List>
     </Page>
   );
 }

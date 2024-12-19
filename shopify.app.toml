@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "e998b629d4fe09b2a50cbe73ef5d511b"
-application_url = "https://necessarily-teen-columnists-containers.trycloudflare.com"
+application_url = "https://conduct-creations-cliff-until.trycloudflare.com"
 embedded = true
 name = "store-data-app"
 handle = "store-data-app-2"
@@ -19,9 +19,9 @@ scopes = "read_orders,write_orders,read_products,write_products,read_customers,w
 
 [auth]
 redirect_urls = [
-  "https://necessarily-teen-columnists-containers.trycloudflare.com/auth/callback",
-  "https://necessarily-teen-columnists-containers.trycloudflare.com/auth/shopify/callback",
-  "https://necessarily-teen-columnists-containers.trycloudflare.com/api/auth/callback"
+  "https://conduct-creations-cliff-until.trycloudflare.com/auth/callback",
+  "https://conduct-creations-cliff-until.trycloudflare.com/auth/shopify/callback",
+  "https://conduct-creations-cliff-until.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
